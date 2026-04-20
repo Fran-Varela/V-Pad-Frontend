@@ -1,0 +1,8 @@
+For greater clarity and understanding of the project, components id's will have the following structure applying to them:
+
+- All button components have the same name structure: btn*EspecificName*
+- All id's and classes must be named in camelCase
+
+Notes for pedir sections:
+- Eliminate the navbar on both pages, the go back button is enough
+- Make the cart send data to the database
