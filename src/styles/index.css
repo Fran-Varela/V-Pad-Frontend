@@ -2657,3 +2657,1058 @@ div > .ingredients-section + .dishes-section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================
+   RESPONSIVE GLOBAL
+   ============================ */
+
+/* Ajustes generales para pantallas medianas */
+@media (max-width: 1024px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .page-content {
+    padding: 60px 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, .hero-title, .menu-title, .values-title {
+    font-size: 80%;
+  }
+
+  .footer {
+    padding: 50px 20px;
+  }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .page-content {
+    padding: 50px 15px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-burger {
+    width: 300px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid,
+  .footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .footer-logo-xxl {
+    width: 240px;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+
+  body {
+    background-position: center;
+  }
+
+  nav {
+    padding: 8px 12px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .page-content {
+    padding: 40px 12px;
+  }
+
+  /* HERO */
+  .hero-section {
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-burger {
+    width: 240px;
+  }
+
+  /* INTRO */
+  .intro-title {
+    font-size: 32px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  /* STAR SECTION */
+  .star-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .star-img {
+    width: 260px;
+  }
+
+  .star-title {
+    font-size: 36px;
+  }
+
+  .star-desc {
+    font-size: 16px;
+  }
+
+  /* VALUES */
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card h3 {
+    font-size: 22px;
+  }
+
+  .value-card p {
+    font-size: 16px;
+  }
+
+  /* MENU */
+  .menu-title {
+    font-size: 32px;
+  }
+
+  .category-title {
+    font-size: 22px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CONTACTO */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  /* FOOTER XXL */
+  .footer-logo-xxl {
+    width: 200px;
+  }
+
+  .footer-grid,
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-card {
+    min-height: auto;
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-text,
+  .footer-info,
+  .footer-link {
+    font-size: 16px;
+  }
+
+  .social-icon {
+    font-size: 28px;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+  }
+}
+
+/* ============================
+   RESPONSIVE NAVBAR PRO
+   ============================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  nav {
+    padding: 12px 18px;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .instagram-link {
+    display: none;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+
+  nav {
+    padding: 10px 14px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  /* Menú móvil */
+  .nav-links-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    padding: 20px 0 30px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 12px 12px;
+    z-index: 999;
+  }
+
+  .nav-links-mobile a {
+    padding: 16px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fffbe6;
+    font-weight: 600;
+  }
+
+  .nav-links-mobile a:hover {
+    background: rgba(230, 185, 64, 0.15);
+    color: #e6b940;
+  }
+
+  .nav-links-mobile a:last-child {
+    border-bottom: none;
+  }
+
+  /* Hamburguesa animada */
+  .hamburger-line {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger:hover .hamburger-line {
+    background: #e6b940;
+  }
+
+  /* Cuando el menú está abierto */
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+
+  .logo {
+    width: 150px;
+  }
+
+  nav {
+    padding: 8px 10px;
+  }
+
+  .nav-links-mobile a {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+}
+
+/* ============================
+   RESPONSIVE HERO PRO
+   ============================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  .hero-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-burger {
+    width: 340px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+
+  .hero-section {
+    padding: 40px 15px;
+    height: auto;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .hero-burger {
+    width: 260px;
+    border-radius: 30px;
+  }
+
+  .hero-burger-name {
+    font-size: 28px;
+  }
+
+  .hero-choose {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-btn,
+  .hero-btn-outline {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .hero-burger {
+    width: 220px;
+  }
+
+  .hero-btn,
+  .hero-btn-outline {
+    max-width: 220px;
+  }
+}
+
+/* ============================
+   RESPONSIVE SECCIONES COMPLETAS
+   ============================ */
+
+/* ---------- TABLETS (≤ 900px) ---------- */
+
+@media (max-width: 900px) {
+
+  /* INTRO */
+  .intro-section {
+    padding: 50px 20px;
+  }
+
+  .intro-title {
+    font-size: 36px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  /* STAR SECTION */
+  .star-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .star-img {
+    width: 300px;
+  }
+
+  .star-title {
+    font-size: 40px;
+  }
+
+  .star-desc {
+    font-size: 18px;
+  }
+
+  /* VALUES */
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-card h3 {
+    font-size: 24px;
+  }
+
+  .value-card p {
+    font-size: 17px;
+  }
+
+  /* BANNER */
+  .banner-text {
+    font-size: 32px;
+  }
+
+  /* MENU / CARTA */
+  .menu-title {
+    font-size: 36px;
+  }
+
+  .category-title {
+    font-size: 26px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* CONTACTO */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  /* PEDIR */
+  .pedir-cards-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .pedir-card .game-title {
+    font-size: 40px;
+  }
+
+  .pedir-card .game-description {
+    font-size: 18px;
+  }
+}
+
+/* ---------- MÓVILES (≤ 600px) ---------- */
+
+@media (max-width: 600px) {
+
+  /* INTRO */
+  .intro-title {
+    font-size: 30px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  /* STAR SECTION */
+  .star-img {
+    width: 240px;
+  }
+
+  .star-title {
+    font-size: 32px;
+  }
+
+  .star-desc {
+    font-size: 16px;
+  }
+
+  .star-list li {
+    font-size: 16px;
+  }
+
+  /* VALUES */
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .value-card h3 {
+    font-size: 22px;
+  }
+
+  .value-card p {
+    font-size: 16px;
+  }
+
+  /* BANNER */
+  .banner-text {
+    font-size: 26px;
+    padding: 0 10px;
+  }
+
+  /* MENU / CARTA */
+  .menu-title {
+    font-size: 30px;
+  }
+
+  .category-title {
+    font-size: 22px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-preview h4 {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  /* MODAL */
+  .modal {
+    padding: 18px;
+  }
+
+  .modal-img {
+    height: 180px;
+  }
+
+  .modal-description {
+    font-size: 15px;
+  }
+
+  /* CONTACTO */
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .contact-info-item {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+  }
+
+  .contact-btn {
+    font-size: 16px;
+  }
+
+  /* PEDIR */
+  .pedir-card {
+    padding: 25px !important;
+  }
+
+  .pedir-card .game-title {
+    font-size: 32px;
+  }
+
+  .pedir-card .game-description {
+    font-size: 16px;
+  }
+
+  /* CAROUSEL */
+  .carousel {
+    height: 220px;
+  }
+
+  .carousel-img {
+    height: 220px;
+  }
+
+  .carousel-btn {
+    font-size: 1.6em;
+  }
+}
+
+/* ---------- MÓVILES PEQUEÑOS (≤ 400px) ---------- */
+
+@media (max-width: 400px) {
+
+  /* INTRO */
+  .intro-title {
+    font-size: 26px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+  }
+
+  /* STAR */
+  .star-img {
+    width: 200px;
+  }
+
+  .star-title {
+    font-size: 28px;
+  }
+
+  .star-desc {
+    font-size: 15px;
+  }
+
+  /* VALUES */
+  .value-card h3 {
+    font-size: 20px;
+  }
+
+  .value-card p {
+    font-size: 15px;
+  }
+
+  /* MENU */
+  .menu-title {
+    font-size: 26px;
+  }
+
+  .category-title {
+    font-size: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACTO */
+  .contact-title {
+    font-size: 24px;
+  }
+
+  /* PEDIR */
+  .pedir-card .game-title {
+    font-size: 26px;
+  }
+
+  .pedir-card .game-description {
+    font-size: 15px;
+  }
+
+  /* CAROUSEL */
+  .carousel {
+    height: 180px;
+  }
+
+  .carousel-img {
+    height: 180px;
+  }
+}
+
+/* ============================
+   RESPONSIVE FOOTER XXL
+   ============================ */
+
+/* ---------- PANTALLAS GRANDES (≥ 1400px) ---------- */
+@media (min-width: 1400px) {
+
+  .footer {
+    padding: 80px 60px;
+  }
+
+  .footer-logo-xxl {
+    width: 380px;
+  }
+
+  .footer-grid {
+    gap: 50px;
+  }
+
+  .footer-card {
+    padding: 35px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+  }
+
+  .footer-text,
+  .footer-info,
+  .footer-link {
+    font-size: 20px;
+  }
+
+  .social-icon {
+    font-size: 38px;
+  }
+}
+
+/* ---------- TABLETS (≤ 900px) ---------- */
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 60px 30px;
+  }
+
+  .footer-logo-xxl {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .footer-card {
+    padding: 22px;
+  }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .footer-text,
+  .footer-info,
+  .footer-link {
+    font-size: 17px;
+  }
+
+  .social-icon {
+    font-size: 28px;
+  }
+}
+
+/* ---------- MÓVILES (≤ 600px) ---------- */
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 50px 20px;
+  }
+
+  /* LOGO CENTRADO Y GRANDE */
+  .footer-logo-container {
+    margin-bottom: 30px;
+  }
+
+  .footer-logo-xxl {
+    width: 220px;
+  }
+
+  /* GRID A UNA COLUMNA */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-text,
+  .footer-info,
+  .footer-link {
+    font-size: 16px;
+  }
+
+  /* ICONOS */
+  .footer-social {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .social-icon {
+    font-size: 30px;
+  }
+
+  /* COPYRIGHT */
+  .footer-copy {
+    font-size: 14px;
+    margin-top: 35px;
+  }
+}
+
+/* ---------- MÓVILES PEQUEÑOS (≤ 400px) ---------- */
+@media (max-width: 400px) {
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-logo-xxl {
+    width: 180px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-text,
+  .footer-info,
+  .footer-link {
+    font-size: 15px;
+  }
+
+  .social-icon {
+    font-size: 26px;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+  }
+}
+
+/* ============================
+   AJUSTES FINALES + OPTIMIZACIÓN
+   ============================ */
+
+/* Corrección de espaciados globales */
+@media (max-width: 900px) {
+  section, .intro-section, .values-section, .banner-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Evitar que nada se pegue a los bordes en móvil */
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Ajuste de sombras y blur para que no saturen en móvil */
+@media (max-width: 600px) {
+  .footer-card,
+  .value-card,
+  .product-preview,
+  .contact-container,
+  .contact-form-box,
+  .menu-fieldset {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+  }
+}
+
+/* Corrección de textos demasiado grandes */
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    line-height: 1.2;
+  }
+
+  p, li {
+    line-height: 1.45;
+  }
+}
+
+/* Ajuste de botones para que no se salgan */
+@media (max-width: 480px) {
+  button, .hero-btn, .hero-btn-outline, .contact-btn, .back-button {
+    width: 100%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Corrección de cards que se estiran demasiado */
+@media (max-width: 600px) {
+  .product-preview,
+  .value-card,
+  .footer-card {
+    padding: 18px;
+  }
+}
+
+/* Ajuste de imágenes para evitar overflow */
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .modal-img,
+  .product-img,
+  .star-img,
+  .hero-burger {
+    border-radius: 12px;
+  }
+}
+
+/* Corrección de grids que se rompen */
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajuste de márgenes entre secciones */
+@media (max-width: 600px) {
+  .intro-section,
+  .star-section,
+  .values-section,
+  .banner-section,
+  .contact-wrapper,
+  .pedir-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Corrección de animaciones para que no sean demasiado agresivas en móvil */
+@media (max-width: 480px) {
+  .product-card:hover,
+  .value-card:hover,
+  .footer-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .social-icon:hover {
+    transform: scale(1.15);
+  }
+}
+
+/* Ajuste final del footer para que quede perfecto */
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-logo-xxl {
+    margin-bottom: 25px;
+  }
+
+  .footer-copy {
+    margin-top: 30px;
+  }
+}
