@@ -3712,3 +3712,160 @@ div > .ingredients-section + .dishes-section {
     margin-top: 30px;
   }
 }
+
+/* ============================
+   NAVBAR BASE
+============================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+}
+
+/* ============================
+   LINKS DESKTOP
+============================ */
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fffbe6;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.nav-links a:hover {
+  color: #e6b940;
+}
+
+/* ============================
+   INSTAGRAM ICON (PC + MÓVIL)
+============================ */
+
+.instagram-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.instagram-icon {
+  width: 32px;
+  height: 32px;
+  fill: #fffbe6;
+  transition: 0.25s;
+}
+
+.instagram-btn:hover .instagram-icon {
+  fill: #e6b940;
+  transform: scale(1.15);
+}
+
+/* ============================
+   HAMBURGUESA
+============================ */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fffbe6;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Animación */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ============================
+   MENÚ MÓVIL
+============================ */
+
+.nav-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(14px);
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  z-index: 9999;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nav-mobile a {
+  color: #fffbe6;
+  font-size: 20px;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.nav-mobile a:hover {
+  background: rgba(230,185,64,0.15);
+  color: #e6b940;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    width: 180px;
+  }
+}
+
