@@ -16,15 +16,15 @@ const Contacto = () => {
         <h2 className="contact-title">Contacto</h2>
 
         <div className="contact-info-item">
-          <p>Av. Ejemplo 123, Ciudad, España</p>
+          <p>Av. de Sevilla, 50, 11560 Trebujena, Cádiz, España</p>
         </div>
 
         <div className="contact-info-item">
-          <a href="tel:+34123456789" className="contact-link">+34 123 456 789</a>
+          <a href="tel:+34617992462" className="contact-link">+34 617 99 24 62</a>
         </div>
 
         <div className="contact-info-item">
-          <a href="mailto:restaurante@correo.com" className="contact-link">restaurante@correo.com</a>
+          <a href="mailto:elyzabethgalafate@correo.com" className="contact-link">elyzabethgalafate@correo.com</a>
         </div>
 
         <div className="contact-info-item">
@@ -32,7 +32,7 @@ const Contacto = () => {
         </div>
 
         <a 
-          href="https://wa.me/34123456789"
+          href="https://wa.me/34617992462"
           target="_blank"
           className="whatsapp-btn"
         >
