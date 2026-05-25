@@ -21,7 +21,7 @@ const Nosotros = () => {
           <div className="about-story-inner">
             <div className="about-story-image-container">
               <div className="image-accent"></div>
-              <img src="/imagenTemporal.avif" alt="Nuestra historia" className="about-story-img" />
+              <img src="/Ensaladilla chicharrones.jpg" alt="Nuestra historia" className="about-story-img" />
             </div>
             <div className="about-story-text">
               <span className="section-label">NUESTRO ORIGEN</span>
@@ -58,8 +58,8 @@ const Nosotros = () => {
               </p>
             </div>
             <div className="new-section-photos">
-              <img src="/imagenTemporal.avif" alt="Nuestra cocina" className="photo-main" />
-              <img src="/imagenTemporal.avif" alt="Proceso de preparación" className="photo-secondary" />
+              <img src="/Lagrimitas de pollo.jpg" alt="Nuestra cocina" className="photo-main" />
+              <img src="/burguer2.webp" alt="Proceso de preparación" className="photo-secondary" />
             </div>
           </div>
         </div>
@@ -70,13 +70,13 @@ const Nosotros = () => {
         <div className="container">
           <h2 className="section-title">El Templo de la Burger</h2>
           <div className="bento-gallery">
-            <div className="gallery-item tall"><img src="/imagenTemporal.avif" alt="G1" /></div>
-            <div className="gallery-item"><img src="/imagenTemporal.avif" alt="G2" /></div>
-            <div className="gallery-item"><img src="/imagenTemporal.avif" alt="G3" /></div>
-            <div className="gallery-item wide"><img src="/imagenTemporal.avif" alt="G4" /></div>
-            <div className="gallery-item"><img src="/imagenTemporal.avif" alt="G5" /></div>
-            <div className="gallery-item"><img src="/imagenTemporal.avif" alt="G6" /></div>
-            <div className="gallery-item wide"><img src="/imagenTemporal.avif" alt="G7" /></div>
+            <div className="gallery-item tall"><img src="/Salpicón de marisco.jpg" alt="G1" /></div>
+            <div className="gallery-item"><img src="/Carne mexicana.jpg" alt="G2" /></div>
+            <div className="gallery-item"><img src="/Huevos rellenos.jpg" alt="G3" /></div>
+            <div className="gallery-item wide"><img src="/Ensaladilla gambas al ajillo.jpg" alt="G4" /></div>
+            <div className="gallery-item"><img src="/Aros de cebolla.jpg" alt="G5" /></div>
+            <div className="gallery-item"><img src="/Bastones de boniato.jpg" alt="G6" /></div>
+            <div className="gallery-item wide"><img src="/Palitos de mozzarella.jpg" alt="G7" /></div>
           </div>
         </div>
       </section>
@@ -84,7 +84,7 @@ const Nosotros = () => {
       {/* Cta */}
       <section className="about-cta">
         <div className="cta-content">
-          <img src="/imagenTemporal.avif" alt="Avenida 50" className="cta-icon" />
+          <img src="/Simple.jpg" alt="Avenida 50" className="cta-icon" />
           <h2 className="cta-title">¿Hambre de algo real?</h2>
           <p className="cta-text">Únete a la experiencia Avenida 50 hoy mismo. Descubre el arte del smash perfecto.</p>
           <div className="cta-buttons">

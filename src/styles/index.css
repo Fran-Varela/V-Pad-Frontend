@@ -779,6 +779,18 @@ fieldset {
     gap: 15px;
 }
 
+/* Móvil: mostrar 2 columnas en lugar de 1 para la carta */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-img {
+    height: 100px;
+  }
+}
+
 .product-preview {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2658,9 +2670,7 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   RESPONSIVE GLOBAL
-   ============================ */
+/* Responsive global */
 
 /* Ajustes generales para pantallas medianas */
 @media (max-width: 1024px) {
@@ -2873,10 +2883,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   RESPONSIVE NAVBAR PRO
-   ============================ */
-
 /* Tablets */
 @media (max-width: 900px) {
 
@@ -2993,10 +2999,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   RESPONSIVE HERO PRO
-   ============================ */
-
 /* Tablets */
 @media (max-width: 900px) {
 
@@ -3109,11 +3111,9 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   RESPONSIVE SECCIONES COMPLETAS
-   ============================ */
+/* Responsive*/
 
-/* ---------- TABLETS (≤ 900px) ---------- */
+/* Tablets */
 
 @media (max-width: 900px) {
 
@@ -3130,7 +3130,6 @@ div > .ingredients-section + .dishes-section {
     font-size: 18px;
   }
 
-  /* STAR SECTION */
   .star-content {
     flex-direction: column;
     text-align: center;
@@ -3205,7 +3204,7 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ---------- MÓVILES (≤ 600px) ---------- */
+/* Mobile */
 
 @media (max-width: 600px) {
 
@@ -3338,8 +3337,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ---------- MÓVILES PEQUEÑOS (≤ 400px) ---------- */
-
 @media (max-width: 400px) {
 
   /* INTRO */
@@ -3410,11 +3407,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   RESPONSIVE FOOTER XXL
-   ============================ */
-
-/* ---------- PANTALLAS GRANDES (≥ 1400px) ---------- */
 @media (min-width: 1400px) {
 
   .footer {
@@ -3448,7 +3440,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ---------- TABLETS (≤ 900px) ---------- */
 @media (max-width: 900px) {
 
   .footer {
@@ -3484,7 +3475,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ---------- MÓVILES (≤ 600px) ---------- */
 @media (max-width: 600px) {
 
   .footer {
@@ -3539,7 +3529,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ---------- MÓVILES PEQUEÑOS (≤ 400px) ---------- */
 @media (max-width: 400px) {
 
   .footer {
@@ -3569,11 +3558,6 @@ div > .ingredients-section + .dishes-section {
   }
 }
 
-/* ============================
-   AJUSTES FINALES + OPTIMIZACIÓN
-   ============================ */
-
-/* Corrección de espaciados globales */
 @media (max-width: 900px) {
   section, .intro-section, .values-section, .banner-section {
     padding-left: 20px;
@@ -3608,6 +3592,7 @@ div > .ingredients-section + .dishes-section {
   .menu-fieldset {
     box-shadow: 0 4px 14px rgba(0,0,0,0.35);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 }
 
@@ -3724,6 +3709,7 @@ div > .ingredients-section + .dishes-section {
   padding: 14px 20px;
   background: rgba(0,0,0,0.45);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 24px rgba(0,0,0,0.6);
   position: relative;
   z-index: 1000;
@@ -3734,9 +3720,7 @@ div > .ingredients-section + .dishes-section {
   height: auto;
 }
 
-/* ============================
-   LINKS DESKTOP
-============================ */
+/* Links */
 
 .nav-links {
   display: flex;
@@ -3754,10 +3738,6 @@ div > .ingredients-section + .dishes-section {
 .nav-links a:hover {
   color: #e6b940;
 }
-
-/* ============================
-   INSTAGRAM ICON (PC + MÓVIL)
-============================ */
 
 .instagram-btn {
   display: flex;
@@ -3777,10 +3757,6 @@ div > .ingredients-section + .dishes-section {
   fill: #e6b940;
   transform: scale(1.15);
 }
-
-/* ============================
-   HAMBURGUESA
-============================ */
 
 .hamburger {
   display: none;
@@ -3811,9 +3787,6 @@ div > .ingredients-section + .dishes-section {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ============================
-   MENÚ MÓVIL
-============================ */
 
 .nav-mobile {
   position: absolute;
@@ -3823,6 +3796,7 @@ div > .ingredients-section + .dishes-section {
 
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   padding: 25px 0;
   display: flex;
   flex-direction: column;
@@ -3850,10 +3824,6 @@ div > .ingredients-section + .dishes-section {
   background: rgba(230,185,64,0.15);
   color: #e6b940;
 }
-
-/* ============================
-   RESPONSIVE
-============================ */
 
 @media (max-width: 900px) {
   .nav-links {
